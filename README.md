@@ -11,7 +11,7 @@ A custom implementation of the SwiGLU feed-forward block with both the forward a
 # Kernels
 | Kernel | Computes | Notes |
 |---|---|---|
-| fwd1_kernel |	$h = SiLU(x W_g) \odot (x W_u)$ | Optional WRITE_AB to store a, b (used in backward)
+| fwd1_kernel |	$h = $SiLU$(x W_g) \odot (x W_u)$ | Optional WRITE_AB to store a, b (used in backward)
 | matmul_kernel |	$y = h @ W_d, dW_d = h^T @ dy$ | Generic strided matmul
 | bwd1_kernel	| $da = dh \odot b \odot s \odot (1+a(1-s)),$ $db= dh \odot a \odot s,$ and $dh = dy @ W_d^T$ | dh is not stored to global memory
 | bwd3_kernel	| $dW_g = x^T @ da, dW_u = x^T @ db$ | Requires only 1 pass over x

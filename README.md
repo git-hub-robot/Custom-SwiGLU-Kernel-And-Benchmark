@@ -3,11 +3,11 @@ A custom implementation of the SwiGLU feed-forward block with both the forward a
 
 # Variable Naming
 Below sections will use the follow variable names:
-input tensor: $x$
-Gate, up, and down weight tensors: $W_g, W_u, W_d$
-Product of activated gate and up projections: $h$
-gate projection (pre-activation) and up projection: $a$ and $b$, respectively
-Sigmoid of gate projection $a$: $s$
+- Input tensor: $x$
+- Gate, up, and down weight tensors: $W_g, W_u, W_d$
+- Product of activated gate and up projections: $h$
+- Gate projection (pre-activation) and up projection: $a$ and $b$, respectively
+- Sigmoid of gate projection $a$: $s$
 
 # Optimizations
 - Fused Forward: The gate and up projections are computed in the same kernel, then SiLU(a) * b is computed in the epilogue, so the intermediate a and b tensors never need to be written to global memory.

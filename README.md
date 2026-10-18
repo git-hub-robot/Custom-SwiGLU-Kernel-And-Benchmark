@@ -29,9 +29,9 @@ A custom implementation of the SwiGLU feed-forward block with both the forward a
 
 Forward Pass: 
 
-![Forward Benchmark](results/SwiGLU-fwd.png)
+![Forward Benchmark](results/swiglu-fwd.png)
 
 
 Backward Pass: 
 
-![Backward Benchmark](results/SwiGLU-bwd.png)
+![Backward Benchmark](results/swiglu-bwd.png)

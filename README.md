@@ -27,10 +27,10 @@ A custom implementation of the SwiGLU feed-forward block with both the forward a
 | Forward | 0.87x | 0.90x |
 | Backward | 0.88x | 0.90x |
 
-## Forward Pass: 
+Forward Pass: 
 
 ![Forward Benchmark](results/swiglu-fwd.png)
 
-## Backward Pass: 
+Backward Pass: 
 
 ![Backward Benchmark](results/swiglu-bwd.png)

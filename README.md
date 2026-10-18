@@ -28,9 +28,9 @@ Validated and benchmarked on (M, N, K) = (512 * {1, 2, ..., 16}, 2048, 5504)
 
 Forward Pass: 
 
-![Forward Benchmark](results/RMSNorm-fwd.png)
+![Forward Benchmark](results/SwiGLU-fwd.png)
 
 
 Backward Pass: 
 
-![Backward Benchmark](results/RMSNorm-bwd.png)
+![Backward Benchmark](results/SwiGLU-bwd.png)

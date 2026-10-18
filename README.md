@@ -19,8 +19,11 @@ A custom implementation of the SwiGLU feed-forward block with both the forward a
 
 # Setup and Results
 GPU: Tesla T4 (Colab)
+
 Inputs and weights in fp16
+
 Validated and benchmarked on (M, N, K) = (512 * {1, 2, ..., 16}, 2048, 5504)
+
 | | Triton / torch.compile (mean) | Triton / torch.eager (mean) |
 |---|---|---|
 | Forward | 0.87x | 0.90x |

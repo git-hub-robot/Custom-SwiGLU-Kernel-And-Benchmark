@@ -1,5 +1,5 @@
 # Custom-SwiGLU-Kernel-And-Benchmark
-A custom implementation of the SwiGLU feed-forward block with both the forward and backward pass. It has been validated for 16 different sizes against PyTorch and benchmarked against both the torch eager and compiled versions. The idea of grouped program ordering for L2 cache reuse and modulo wraparound trick is inspired by Triton's matmul tutorial (03-matrix-multiplication).
+A custom implementation of the SwiGLU feed-forward block with both the forward and backward pass. It has been validated for 16 different sizes against PyTorch and benchmarked against both the torch eager and compiled versions. Multiple optimizations such as fused kernels and grouped program ordering to increase L2 cache reuse are used.
 
 # Variable Naming
 Below sections will use the follow variable names:
